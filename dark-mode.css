@@ -7,13 +7,19 @@
 	--info-font-color: #a0a0a0;
 	--color-darker: #32353B;
 	--color-darkest: #36393F;
-    	--color-dark: #2F3136;
+	--color-dark: #2F3136;
 	--rc-color-primary-background: #2F3136;
 	--rcx-button-colors-ghost-border-color: #2F3136;
-    	--rcx-button-colors-ghost-background-color: #2F3136;
+	--rcx-button-colors-ghost-background-color: #2F3136;
 	--rcx-button-colors-ghost-success-border-color: #2F3136;
-    	--rcx-button-colors-ghost-success-background-color: #2F3136;
+	--rcx-button-colors-ghost-success-background-color: #2F3136;
 	--rcx-color-foreground-hint: #999ea7;
+	--rcx-color-foreground-hint: #fbfbfb;
+	--message-box-user-activity-user-color: #E2E2E2;
+	--rcx-button-colors-ghost-background-color: transparent;
+	--rcx-button-colors-ghost-border-color: transparent;
+	--message-box-user-activity-text-size: 0.75rem;
+	--message-box-background: #252525;
 }
 
 /* Reset global font color so that it's changable more easily */
@@ -1043,8 +1049,35 @@ body.dark-mode .rcx-box--with-inline-elements code, .rcx-field__description code
 	color: var(--primary-font-color) !important;
 }
 
+/* Ryzom styles */
+body.dark-mode .message .title .is-bot, .message .title .role-tag {
+	border-radius: 4px;
+}
+
+body.dark-mode .rc-message-box__container {
+	border-width: 0px;
+	border-radius: 5px;
+	background-color: #404040;
+}
+
+body.dark-mode .rcx-css-1d5cod7 {
+	background-color: var(--color-darkest) !important;
+}
+
+body.dark-mode .rcx-css-1d5cod7 {
+	background-color: #0001 !important;
+	border-width: 0px !important;
+	border-left-width: 0px;
+	border-left: 1px solid rgb(238, 239, 241) !important;
+}
+
+body.dark-mode .rcx-css-5x1pm0 {
+	border-width: 0px !important;
+	border: 0;
+}
+
+
 /* This CSS block is used to counter RocketChat's bug which crop the end of custom CSS. */
 .dummy-entry {
     color: whitesmoke;
 }
-
