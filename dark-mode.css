@@ -5,7 +5,15 @@
  :root {
 	--primary-font-color: #444;
 	--info-font-color: #a0a0a0;
-	--color-darker: #272c33;
+	--color-darker: #32353B;
+	--color-darkest: #36393F;
+    	--color-dark: #2F3136;
+	--rc-color-primary-background: #2F3136;
+	--rcx-button-colors-ghost-border-color: #2F3136;
+    	--rcx-button-colors-ghost-background-color: #2F3136;
+	--rcx-button-colors-ghost-success-border-color: #2F3136;
+    	--rcx-button-colors-ghost-success-background-color: #2F3136;
+	--rcx-color-foreground-hint: #999ea7;
 }
 
 /* Reset global font color so that it's changable more easily */
@@ -99,7 +107,7 @@ body.dark-mode {
 	/****************************** Custom Variables ******************************/
 	--primary-font-color: var(--color-gray-lightest);
 	--info-font-color: var(--color-gray-light);
-	--message-box-background: hsla(0, 0, 100%, 0.1);
+	--message-box-background: #40444B;
 
 	--button-outline-color: var(--color-gray-medium);
 	--button-close-color: var(--color-gray-medium);
@@ -531,6 +539,10 @@ body.dark-mode .rcx-button--danger {
 
 body.dark-mode .rcx-vertical-bar {
 	background-color: var(--rc-color-primary-background) !important;
+}
+
+.rcx-sidebar {
+    background-color: var(--color-dark) !important;
 }
 
 body.dark-mode .rcx-css-136xdpx:hover, /* Thread list item */
@@ -1035,3 +1047,4 @@ body.dark-mode .rcx-box--with-inline-elements code, .rcx-field__description code
 .dummy-entry {
     color: whitesmoke;
 }
+
